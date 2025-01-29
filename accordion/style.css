@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 30px;
+}
+
+ul {
+    display: grid;
+    width: 70%;
+}
+
+.item{
+    display: grid;
+    list-style: none;
+}
+
+.wrap{
+    overflow: hidden;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.text {
+    display: grid; 
+    grid-template-rows: 0fr;
+    transition: 0.7s grid-template-rows ease;
+}
+
+.visible .text {
+    grid-template-rows: 1fr;
+    margin-bottom: 20px;
+}
